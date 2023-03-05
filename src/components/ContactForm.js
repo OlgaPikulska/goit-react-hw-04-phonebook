@@ -1,6 +1,8 @@
 import { React, useState } from "react";
 import styled from "styled-components";
 import { nanoid } from "nanoid";
+import PropTypes from 'prop-types';
+
 
 const StyledForm = styled.form`
 border: 1px solid black;
@@ -86,4 +88,8 @@ export const ContactForm = (props) => {
                 Add contact</StyledButton>
         </StyledForm>
     )
+}
+
+ContactForm.propTypes = {
+    props: PropTypes.object,
 }
